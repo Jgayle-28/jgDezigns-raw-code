@@ -1,0 +1,290 @@
+.why {
+  padding: 10rem 0 10rem;
+  width: 100%;
+  background-color: $bg-white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.why-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-lrg) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.why-sect {
+  width: 40%;
+
+  align-self: flex-start;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-xlrg) {
+    width: 50%;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    width: 90%;
+    align-self: center;
+  }
+
+  &-head {
+    margin-bottom: 5rem;
+
+    @media only screen and (max-width: $bp-lrg) {
+      align-self: center;
+    }
+
+    @media only screen and (max-width: $bp-med) {
+      margin-bottom: 7rem;
+    }
+  }
+
+  &-p {
+    z-index: 2;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+  }
+}
+
+.why-rect {
+  margin-top: -13rem;
+  margin-left: 8.1rem;
+}
+
+//////// WHY BOXES ////////////
+.why-box-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  @media only screen and (max-width: $bp-lrg) {
+    justify-content: center;
+  }
+}
+
+.why-box {
+  width: 20rem;
+  background-color: $grey-card-bg;
+  text-align: center;
+  transition: all 0.3s ease;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+
+  @media only screen and (max-width: $bp-med) {
+    width: 30rem;
+  }
+
+  &-head {
+    width: 20rem;
+    height: 4px;
+    display: inline-block;
+    background: linear-gradient(to left, $color-primary-dark, $color-primary);
+
+    @media only screen and (max-width: $bp-med) {
+      width: 30rem;
+    }
+  }
+
+  &-icon {
+    margin: 2rem 0 1.5rem;
+
+    @media only screen and (max-width: $bp-ibt) {
+      width: 3rem;
+      height: 4rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      margin: 3rem 0 2rem;
+    }
+  }
+
+  &-personal {
+    margin-right: 3rem;
+
+    @media only screen and (max-width: $bp-sm) {
+      margin-right: 0;
+    }
+  }
+
+  &-ontime {
+    @media only screen and (max-width: $bp-sm) {
+      margin: 3rem 0;
+    }
+  }
+
+  &-custom {
+    margin-right: 3rem;
+    margin-top: 2rem;
+
+    @media only screen and (max-width: $bp-sm) {
+      margin-right: 0;
+    }
+  }
+
+  &-responsive {
+    margin-top: 2rem;
+  }
+
+  &-header {
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    font-size: 1.6rem;
+    font-weight: 300;
+    color: $color-primary-dark;
+  }
+  &-line {
+    height: 1.1px;
+    width: 16.5rem;
+    background-color: #292929;
+    display: inline-block;
+  }
+
+  &-text {
+    padding: 1.5rem 1rem 2rem;
+    font-weight: 300;
+    font-size: 1.3rem;
+    letter-spacing: 1.2px;
+    text-align: center;
+    color: $grey-card-text;
+
+    @media only screen and (max-width: $bp-med) {
+      padding: 2rem 2rem 3.5rem;
+    }
+  }
+
+  &:hover {
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+    -webkit-animation: pulsate-bck 0.5s ease-in-out both;
+    animation: pulsate-bck 0.5s ease-in-out both;
+  }
+}
+
+//////// WHAT I CREATE ////////////
+.create-sect {
+  width: 40%;
+  font-weight: 300;
+  color: $black;
+  text-transform: uppercase;
+
+  align-self: flex-start;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-lrg) {
+    width: 90%;
+    align-self: center;
+    margin-left: 22rem;
+    margin-top: -10rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    margin-left: 3rem;
+    margin-top: -10rem;
+  }
+
+  &-head {
+    margin-bottom: 5rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+    margin: 0 0 3rem 1rem;
+    padding-left: 1.75rem;
+    letter-spacing: 2px;
+    position: relative;
+    z-index: 1;
+
+    &::after {
+      content: '';
+      height: 0.65rem;
+      width: 0.65rem;
+      border: 1px solid $color-primary;
+      display: block;
+      position: absolute;
+      transform: rotate(45deg);
+      top: 0.75rem;
+      left: 0;
+    }
+  }
+}
+
+.what-rect {
+  margin-top: -13rem;
+  margin-left: 6.5rem;
+}
+
+.why-word {
+  text-transform: uppercase;
+  font-weight: 700;
+  color: $bg-grey;
+  font-size: 14.4em;
+  margin-top: -20rem;
+  margin-left: 38rem;
+  letter-spacing: 13px;
+
+  @media only screen and (max-width: $bp-ibt) {
+    font-size: 13rem;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    font-size: 16rem;
+    margin-top: 40rem;
+    margin-left: 48rem;
+    margin-bottom: -40rem;
+    transform: rotate(-90deg);
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    font-size: 8rem;
+    margin-top: 58rem;
+    margin-left: 20rem;
+    margin-bottom: -45rem;
+  }
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1.2) translateY(-2px);
+    transform: scale(1.2) translateY(-2px);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1.2) translateY(-2px);
+    transform: scale(1.2) translateY(-2px);
+  }
+}

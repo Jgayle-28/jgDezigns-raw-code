@@ -1,0 +1,244 @@
+//////// MISSION ////////////
+.mission {
+  padding: 8rem 0 10rem;
+  width: 100%;
+  background-color: $bg-white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mission-wrapper {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+
+  @media only screen and (max-width: $bp-lrg) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.mission-sect {
+  width: 40%;
+
+  align-self: flex-start;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media only screen and (max-width: $bp-ibt) {
+    width: 45%;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    width: 90%;
+    align-self: center;
+  }
+
+  &-head {
+    margin-bottom: 5rem;
+  }
+
+  &-p {
+    z-index: 2;
+    font-size: 1.4rem;
+    letter-spacing: 1.5px;
+    font-weight: 300;
+  }
+}
+
+.miss-rect {
+  margin-top: -13rem;
+  margin-left: 3.8rem;
+}
+
+.miss-word {
+  margin-top: -11rem;
+  margin-left: 3rem;
+  text-transform: uppercase;
+  font-size: 11.5rem;
+  font-weight: 700;
+  letter-spacing: 12.8px;
+  color: $bg-grey;
+
+  @media only screen and (max-width: $bp-lrg) {
+    font-size: 12rem;
+    margin-left: 0;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    margin-top: -6rem;
+    font-size: 8rem;
+  }
+}
+
+//////// SKILLS ////////////
+.skills-sect {
+  margin-top: 6rem;
+  width: 40%;
+
+  @media only screen and (max-width: $bp-lrg) {
+    margin-top: 0;
+  }
+
+  @media only screen and (max-width: $bp-ibt) {
+    width: 45%;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    width: 75%;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    width: 90%;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    width: 80%;
+  }
+
+  li {
+    margin: 2rem 0;
+    list-style-type: none;
+  }
+
+  h3 {
+    margin-bottom: 0.5rem;
+  }
+}
+
+.bar {
+  background-color: #fefefe;
+  display: block;
+  height: 2px;
+  border: 1px solid $bg-grey;
+  border-radius: 3px;
+  box-shadow: 0 0 10px rgba($color-primary, 0.3);
+}
+
+.bar span {
+  height: 2px;
+  float: left;
+  background: $color-primary;
+}
+
+.web-dev {
+  width: 90%;
+  animation: web-dev 2s 4.5s;
+}
+
+.web-design {
+  width: 70%;
+  animation: web-design 2s 4s;
+}
+
+.wordpress {
+  width: 75%;
+  animation: wordpress 2s 4s;
+}
+
+.branding {
+  width: 65%;
+  animation: branding 2s 4s;
+}
+
+//////// SKILLS ANIMATIONS ////////////
+@keyframes web-dev {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 90%;
+  }
+}
+
+@keyframes web-design {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes wordpress {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 75%;
+  }
+}
+
+@keyframes branding {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 65%;
+  }
+}
+
+//////// I DO SECTION ////////////
+.i-do {
+  width: 100%;
+  height: 30rem;
+  background-image: url(../img/ido.png);
+  background-position: center center;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#message {
+  text-transform: uppercase;
+
+  @media only screen and (max-width: $bp-sm) {
+    display: block;
+    text-align: center;
+  }
+}
+
+.ido-message {
+  color: $white;
+  font-weight: 300;
+  font-size: 4.5rem;
+  position: absolute;
+
+  @media only screen and (max-width: $bp-med) {
+    font-size: 4rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    display: block;
+    font-size: 3.3rem;
+    text-align: center;
+  }
+}
+
+.cursor {
+  display: inline-block;
+  height: 4.5rem;
+  width: 2px;
+  background: $white;
+  vertical-align: middle;
+  animation: 1s blink linear infinite;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 0;
+  }
+  50%,
+  100% {
+    opacity: 1;
+  }
+}

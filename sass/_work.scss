@@ -1,0 +1,273 @@
+.work {
+  padding: 10rem 0 5rem;
+  width: 100%;
+  background-color: $bg-white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-head {
+  padding-left: 9rem;
+  margin-bottom: -2.5rem;
+  align-self: flex-start;
+
+  @media only screen and (max-width: $bp-lrg) {
+    padding-left: 11.5rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    padding-left: 7.3rem;
+  }
+}
+
+.work-box-wrapper {
+  padding: 5rem 0 6rem;
+  width: 100%;
+  border: 2px solid $color-primary;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+  -webkit-clip-path: polygon(
+    0 0,
+    7% 0%,
+    7% 10%,
+    31% 10%,
+    31% 0%,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+  clip-path: polygon(
+    0 0,
+    7% 0%,
+    7% 10%,
+    31% 10%,
+    31% 0%,
+    100% 0,
+    100% 100%,
+    0 100%
+  );
+
+  @media only screen and (max-width: $bp-xlrg) {
+    -webkit-clip-path: polygon(
+      0 0,
+      7% 0%,
+      7% 10%,
+      34% 10%,
+      34% 0%,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+    clip-path: polygon(
+      0 0,
+      7% 0%,
+      7% 10%,
+      34% 10%,
+      34% 0%,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  @media only screen and (max-width: $bp-ibt) {
+    -webkit-clip-path: polygon(
+      0 0,
+      7% 0%,
+      7% 10%,
+      38.5% 10%,
+      38.5% 0%,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+    clip-path: polygon(
+      0 0,
+      7% 0%,
+      7% 10%,
+      38.5% 10%,
+      38.5% 0%,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 80%;
+    -webkit-clip-path: polygon(
+      0 0,
+      7% 0%,
+      7% 3%,
+      53% 3%,
+      53% 0%,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+    clip-path: polygon(
+      0 0,
+      7% 0%,
+      7% 3%,
+      53% 3%,
+      53% 0%,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    width: 90%;
+    -webkit-clip-path: polygon(
+      0 0,
+      10% 0%,
+      10% 3%,
+      88% 3%,
+      88% 0%,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+    clip-path: polygon(
+      0 0,
+      10% 0%,
+      10% 3%,
+      88% 3%,
+      88% 0%,
+      100% 0,
+      100% 100%,
+      0 100%
+    );
+  }
+
+  img {
+    transition: all 0.5s ease;
+
+    @media only screen and (max-width: $bp-xlrg) {
+      width: 31rem;
+      height: 20.6rem;
+    }
+
+    @media only screen and (max-width: $bp-ibt) {
+      width: 28.5rem;
+      height: 19rem;
+    }
+
+    @media only screen and (max-width: $bp-lrg) {
+      width: 37rem;
+      height: 24.6rem;
+    }
+
+    @media only screen and (max-width: $bp-sm) {
+      width: 32rem;
+      height: 21.33rem;
+    }
+
+    &:hover {
+      opacity: 0.9;
+      cursor: pointer;
+
+      -webkit-animation: pulsate-fwd 0.5s ease-in-out both;
+      animation: pulsate-fwd 0.5s ease-in-out both;
+    }
+  }
+}
+
+.mandys {
+  margin: 3rem 0;
+}
+
+.work-btn {
+  margin-top: -2.2rem;
+  padding: 1rem 3rem;
+  background-color: $color-primary;
+  font-size: 1.6em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: $black;
+  z-index: 1;
+  transition: all 0.3s ease;
+
+  &:hover {
+    -webkit-animation: pulsate-bck 0.5s ease-in-out both;
+    animation: pulsate-bck 0.5s ease-in-out both;
+    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.5);
+  }
+
+  &:focus {
+    transform: translateY(1px) scale(1);
+  }
+}
+
+@-webkit-keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-bck {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@keyframes pulsate-fwd {
+  0% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}

@@ -1,0 +1,264 @@
+.contact-me {
+  padding: 15rem 0 10rem;
+  width: 100%;
+  background-color: $bg-white;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.contact-word {
+  font-weight: 700;
+  font-size: 6rem;
+  text-transform: uppercase;
+  letter-spacing: 6.2px;
+  color: $bg-grey;
+
+  margin-top: 15rem;
+  margin-left: 72rem;
+  margin-bottom: -39rem;
+
+  @media only screen and (max-width: $bp-xlrg) {
+    margin-top: 15rem;
+    margin-left: 68rem;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    margin-top: 63rem;
+    margin-bottom: -82rem;
+    margin-left: 12rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    margin-left: 0;
+  }
+}
+
+.contact-form-wrapper {
+  width: 100%;
+  z-index: 1;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: $bp-ibt) {
+    justify-content: center;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.contact-sect-head {
+  margin-bottom: 5rem;
+}
+
+.contact {
+  z-index: 1;
+  width: 70%;
+  border-radius: 2px;
+
+  @media only screen and (max-width: $bp-lrg) {
+  }
+
+  @media only screen and (max-width: $bp-ibt) {
+    width: 60%;
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    width: 90%;
+  }
+
+  &__form {
+    @media only screen and (max-width: $bp-lrg) {
+      width: 65%;
+    }
+    @media only screen and (max-width: $bp-med) {
+      width: 100%;
+    }
+  }
+}
+
+.form {
+  font-size: 1.2rem;
+  font-family: $font-primary;
+  letter-spacing: 3.71;
+  line-height: 2rem;
+  color: $grey-text;
+  z-index: 1;
+
+  &-header {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    font-family: $font-primary;
+    color: $grey-text;
+  }
+
+  &__group:not(:last-child) {
+    margin-bottom: 2rem;
+  }
+
+  &__input {
+    font-size: 1.2rem;
+    font-family: $font-primary;
+    letter-spacing: 3.71;
+    line-height: 2rem;
+    color: $grey-text;
+
+    padding: 1.5rem 2rem;
+    border-radius: 2px;
+    background-color: $bg-white;
+    border: none;
+    border-bottom: 1px solid $black;
+    width: 90%;
+    display: block;
+    transition: all 0.3s;
+
+    @media only screen and (max-width: $bp-med) {
+      width: 100%;
+    }
+
+    textarea {
+      &:focus {
+        background-color: $bg-white;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      box-shadow: 0 1rem 2rem rgba($black, 0.3);
+      background-color: $white;
+    }
+
+    &::-webkit-input-placeholder {
+      font-size: 1.2rem;
+      font-family: $font-primary;
+      font-weight: 200;
+      letter-spacing: 3px;
+      line-height: 2rem;
+      color: $grey-text;
+      text-transform: uppercase;
+    }
+  }
+
+  &__label {
+    font-size: 1.2rem;
+    font-family: $font-primary;
+    letter-spacing: 3px;
+    line-height: 2rem;
+    color: $grey-text;
+    margin-left: 2rem;
+    margin-top: 0.7rem;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  &__input:placeholder-shown + &__label {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-4rem);
+  }
+
+  &__btn {
+    background-color: $black;
+    color: $white;
+    font-size: 1.2rem;
+    font-family: $font-primary;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    line-height: 2rem;
+    padding: 0.7rem 5rem;
+    transition: all 0.1s;
+
+    &:focus {
+      outline: none;
+      transform: translateY(2px);
+    }
+  }
+}
+
+.alt-contact {
+  width: 30%;
+  z-index: 1;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+
+  @media only screen and (max-width: $bp-ibt) {
+  }
+
+  @media only screen and (max-width: $bp-med) {
+    margin-left: 3rem;
+    margin-top: 6rem;
+    width: 70%;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    margin-left: 0;
+  }
+
+  &-head {
+    font-weight: 300;
+    font-size: 2.4rem;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+    color: $color-primary-dark;
+    margin-bottom: 1.5rem;
+  }
+
+  &-info {
+    font-size: 1.4rem;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: $grey-text;
+    margin-bottom: 1.5rem;
+  }
+
+  &-line {
+    height: 1px;
+    width: 100%;
+    background-color: $black;
+    margin-bottom: 1rem;
+  }
+}
+
+.contact-social {
+  z-index: 1;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  img {
+    width: 3rem;
+    height: 3rem;
+    transition: all 0.4s ease;
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.twit {
+  margin: 0 1.5rem;
+}

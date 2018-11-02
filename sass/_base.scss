@@ -1,0 +1,196 @@
+// COLOR VARIABLES
+$color-primary-light: #01f8fb;
+$color-primary: #00ded4;
+$color-primary-dark: #00a69e;
+$color-primary-dark-b: #000e0e;
+
+$black: #212121;
+$black-1: #191919;
+
+$white: #ffffff;
+$bg-white: #f9f9f9;
+
+$grey-text: #9b9b9b;
+$grey-card-text: #d7d8d7;
+$grey-card-bg: #3a3a3a;
+$bg-grey: #f0f0f0;
+
+// RESPONSIVE BREAKPOINTS
+$bp-xxxlrg: 112.5em; //1800px - WIDE DESKTOP
+$bp-xxlrg: 100em; //1600px - WIDE - HD DESKTOP
+$bp-xlrg: 79.4em; //1270px - LAPTOP
+$bp-ibt: 70.3125em; //1125px - BETWEEN DESKTOP AND TABLET (TAB LAND)
+$bp-lrg: 62.5em; //1000px - TAB-LAND
+$bp-ml: 56.25; //900px - IN BETWEEN FOR TAB
+$bp-med: 50em; //800px - TAB-PORT
+$bp-sm: 37.5em; //600 - PHONE
+
+// FONT VARIABLES
+$font-primary: 'Lato', sans-serif; //300, 400, 700
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; // 10px / 16px = 62.5% -> 10px
+  // scroll-behavior: smooth;
+}
+
+body {
+  font-family: $font-primary;
+  color: $grey-text;
+  line-height: 1.6;
+  background-color: $white;
+}
+
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+a:link,
+a:active,
+a:visited {
+  color: $black;
+  text-decoration: none;
+}
+
+.content-wrapper {
+  width: 114rem;
+  max-width: 114rem;
+
+  @media only screen and (max-width: $bp-xlrg) {
+    width: 104rem;
+    max-width: 104rem;
+  }
+
+  @media only screen and (max-width: $bp-ibt) {
+    width: 94rem;
+    max-width: 94rem;
+  }
+
+  @media only screen and (max-width: $bp-lrg) {
+    width: 70rem;
+    max-width: 70rem;
+  }
+
+  @media only screen and (max-width: $bp-sm) {
+    width: 40rem;
+    max-width: 40rem;
+  }
+}
+
+//////// MAIN HEADER BASE STYLES ////////////
+
+.main-head {
+  font-size: 4.5em;
+  font-weight: 300;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 5rem;
+  color: $black;
+}
+
+.first-word {
+  font-weight: 500;
+  color: $color-primary;
+}
+
+.i-b {
+  display: block;
+}
+
+.head-rectangle {
+  height: 15rem;
+  width: 22.5rem;
+  border: 9px solid $bg-grey;
+  z-index: -1;
+}
+
+//////// PAGE LOAD ANIMATIONS ////////////
+.content {
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+.home-content {
+  -webkit-animation: home-fadein 1s;
+  animation: home-fadein 1s;
+}
+
+.content-fade-out {
+  -webkit-animation: fadeout 0.5s;
+  animation: fadeout 0.5s;
+}
+
+@-webkit-keyframes fadein {
+  from {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes fadein {
+  from {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes home-fadein {
+  from {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes home-fadein {
+  from {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+}
+
+@keyframes fadeout {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.99);
+  }
+}
